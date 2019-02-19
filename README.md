@@ -12,6 +12,7 @@
 ## How to test
 
 Require: PHP 7.3
+
 Composer is not required if you don't plan to add dependencies
 
 Clone, go in the root and launch with:
