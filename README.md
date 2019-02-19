@@ -7,7 +7,7 @@
 * use of Composer
 * PSR7 request objects
 * routing
-* use of Twig and container dependency injection
+* use of Twig and container dependencies injection / Container DI
 
 ## Sources
 
