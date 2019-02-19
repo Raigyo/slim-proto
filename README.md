@@ -15,11 +15,11 @@ Require: PHP 7.3
 
 Composer is not required if you don't plan to add dependencies
 
-Clone, go in the root and launch with:
+Clone, go in the root (of this application) and launch the php server with:
 
 php -S localhost:8000 -t public/
 
-Then in your browser: http://localhost:8000/
+Then run the application in your browser: http://localhost:8000/
 
 ## Sources
 
