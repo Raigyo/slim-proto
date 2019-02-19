@@ -9,6 +9,14 @@
 * routing
 * use of Twig and container dependencies injection / Container DI
 
+## How to test
+
+Require: PHP 7.3
+
+Clone, go in the root and launch with:
+php -S localhost:8000 -t public/
+Then in your browser: http://localhost:8000/
+
 ## Sources
 
 [zooboole's Github](https://github.com/zooboole)
