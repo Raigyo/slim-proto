@@ -52,14 +52,9 @@ $app->get('/',function(ServerRequestInterface $request,ResponseInterface $respon
 $app->get('/about',function(ServerRequestInterface $request,ResponseInterface $response,$args) {
   return $this->view->render($response, 'about.twig');
 });
+$app->get('/contact',function(ServerRequestInterface $request,ResponseInterface $response,$args) {
+  return $this->view->render($response, 'contact.twig');
+});
 
-//route for about
-/*$app->get('/about', function(ServerRequestInterface $request, ResponseInterface $response, $args){
-	// Do anything here, like:
-	echo "About Us <br>";
-	echo" This is our about page ";
-	// Then return an HTTP response
-	return $response;
-});*/
 
 $app->run();
