@@ -48,13 +48,15 @@ $container['view'] = function ($container) {
 // route for HP
 $app->get('/',function(ServerRequestInterface $request,ResponseInterface $response,$args) {
   return $this->view->render($response, 'home.twig');
-});
+})->setName('home');
+// route for about
 $app->get('/about',function(ServerRequestInterface $request,ResponseInterface $response,$args) {
   return $this->view->render($response, 'about.twig');
-});
+})->setName('about');
+// route for contact
 $app->get('/contact',function(ServerRequestInterface $request,ResponseInterface $response,$args) {
   return $this->view->render($response, 'contact.twig');
-});
+})->setName('contact');
 
 
 $app->run();
