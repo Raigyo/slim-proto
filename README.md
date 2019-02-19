@@ -11,9 +11,9 @@
 
 ## Sources
 
-[zooboole's Github](https://github.com/zooboole/Slim3-First-Application)
+[zooboole's Github](https://github.com/zooboole)
 
-[zooboole's tutorial](https://phpocean.com/tutorials/back-end/workouts-with-slim-3-part-3-routing/44)
+[zooboole's tutorial](https://phpocean.com/tutorials/back-end/workouts-with-slim-3-create-a-simple-website/48)
 
 [Slim documentation](http://www.slimframework.com/docs/v3/concepts/di.html)
 
