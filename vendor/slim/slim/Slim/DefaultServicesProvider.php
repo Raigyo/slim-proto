@@ -1,15 +1,16 @@
 <?php
 /**
- * Slim Framework (https://slimframework.com)
+ * Slim Framework (http://slimframework.com)
  *
  * @link      https://github.com/slimphp/Slim
- * @copyright Copyright (c) 2011-2017 Josh Lockhart
+ * @copyright Copyright (c) 2011-2016 Josh Lockhart
  * @license   https://github.com/slimphp/Slim/blob/3.x/LICENSE.md (MIT License)
  */
 namespace Slim;
 
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
+use Slim\Exception\ContainerValueNotFoundException;
 use Slim\Handlers\PhpError;
 use Slim\Handlers\Error;
 use Slim\Handlers\NotFound;
@@ -82,23 +83,10 @@ class DefaultServicesProvider
              * This service MUST return a SHARED instance
              * of \Slim\Interfaces\RouterInterface.
              *
-             * @param Container $container
-             *
              * @return RouterInterface
              */
-            $container['router'] = function ($container) {
-                $routerCacheFile = false;
-                if (isset($container->get('settings')['routerCacheFile'])) {
-                    $routerCacheFile = $container->get('settings')['routerCacheFile'];
-                }
-
-
-                $router = (new Router)->setCacheFile($routerCacheFile);
-                if (method_exists($router, 'setContainer')) {
-                    $router->setContainer($container);
-                }
-
-                return $router;
+            $container['router'] = function () {
+                return new Router;
             };
         }
 
@@ -152,9 +140,7 @@ class DefaultServicesProvider
              * @return callable
              */
             $container['errorHandler'] = function ($container) {
-                return new Error(
-                    $container->get('settings')['displayErrorDetails']
-                );
+                return new Error($container->get('settings')['displayErrorDetails']);
             };
         }
 
