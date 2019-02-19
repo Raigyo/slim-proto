@@ -1,18 +1,21 @@
 <?php
 /**launch from root with: php -S localhost:8000 -t public/
 http://localhost:8000/
-More info about php build-in server: http://php.net/manual/fr/features.commandline.webserver.php**/
-/** source repo: https://github.com/zooboole/Slim3-First-Application**/
-/** routing: https://phpocean.com/tutorials/back-end/laravel-for-tortoises-part-4-routing/27**/
+More info about php build-in server: http://php.net/manual/fr/features.commandline.webserver.php
+source repo: https://github.com/zooboole/Slim3-First-Application
+routing: https://phpocean.com/tutorials/back-end/laravel-for-tortoises-part-4-routing/27
+PSR 7: https://www.php-fig.org/psr/psr-7/
+PSR 7: http://www.slimframework.com/docs/v3/objects/request.html**/
+
 
 // Let's ask PHP to display all errors whenever they
 // occur in our slim code
 ini_set('display_errors', true);
 
-// Call composer to autoload(make them available)
-// all classes from the the `vendor` folder
 
 //USE VENDOR
+// Call composer to autoload(make them available)
+// all classes from the the `vendor` folder
 // located at vendor/autoload.php
 require __DIR__ . '/../vendor/autoload.php';
 
@@ -21,8 +24,6 @@ use Slim\App;
 
 //PSR 7 REQUEST OBJECT
 // we will have to specify that we are using the PSR-7 interfaces
-//https://www.php-fig.org/psr/psr-7/
-//http://www.slimframework.com/docs/v3/objects/request.html
 use \Psr\Http\Message\ServerRequestInterface;
 use \Psr\Http\Message\ResponseInterface;
 
