@@ -15,28 +15,51 @@ Environment prototype that can be used for the group exercice
 ## Architecture
 
 ├── app
+
 │   ├── dependencies.php
+
 │   ├── routes.php
+
 │   └── settings.php   
+
 ├── bootstrap
+
 │   └── app.php
+
 ├── cache
+
 ├── css
+
 │   └── style.css
+
 ├── img
+
 ├── public
+
 │   └── index.php
+
 ├── templates
+
 │   ├── partials
+
 │   │   ├── footer.twig
+
 │   │   └── nav.php
+
 │   ├── about.twig
+
 │   ├── contact.twig
+
 │   ├── home.twig
+
 │   └── layout.twig
+
 ├── vendor
+
 ├── composer.json
+
 ├── composer.lock
+
 └── README.md
 
 ### Prerequisites
