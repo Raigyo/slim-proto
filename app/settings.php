@@ -8,6 +8,7 @@ return [
             'displayErrorDetails' => true,
             'view' => [
                 'path' => __DIR__ . '/../templates',
+                'description' => 'My website',
                 'baseUrl' => '/../',
                 'twig' => [
                 'cache' => false

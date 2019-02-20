@@ -22,12 +22,9 @@ $app->get('/contact',function(ServerRequestInterface $request,ResponseInterface 
   return $this->view->render($response, 'contact.twig');
 })->setName('contact');
 // Post Requests
-
-//$app->post("/login", function() use($app){
-    /*$paramValue1 = $app->request->post('contentForm');
-    echo '<b>'.$paramValue1.'<br>';*/
-//});
-
-$app->post('/login',function(ServerRequestInterface $request,ResponseInterface $response,$args) {
-  return $this->view->render($response, 'confirm.twig');
+$app->post('/confirm',function(ServerRequestInterface $request,ResponseInterface $response,$args) {
+  //we put the content of the form in an array and then in a variable
+  $data = ['contentForm' => $request->getParam('contentForm')];
+  //because we can only send an array as argument in a render
+  return $this->view->render($response, 'confirm.twig', $data);
 })->setName('confirm');
