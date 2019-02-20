@@ -23,7 +23,11 @@ $app->get('/contact',function(ServerRequestInterface $request,ResponseInterface 
 })->setName('contact');
 // Post Requests
 
-$app->post("/login", function() use($app){
-    $paramValue1 = $app->request->post('contentForm');
-    echo '<b>'.$paramValue1.'<br>';
-});
+//$app->post("/login", function() use($app){
+    /*$paramValue1 = $app->request->post('contentForm');
+    echo '<b>'.$paramValue1.'<br>';*/
+//});
+
+$app->post('/login',function(ServerRequestInterface $request,ResponseInterface $response,$args) {
+  return $this->view->render($response, 'confirm.twig');
+})->setName('confirm');
