@@ -13,7 +13,8 @@
 // Application settings
 $settings = require __DIR__ . '/../app/settings.php';
 
-// call of the Slim application using its namespace (=instanciation).
+// call of the Slim application using its namespace
+//instanciation using the object settings as argument.
 use Slim\App;
 $app = new Slim\App( $settings );
 
