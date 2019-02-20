@@ -66,30 +66,30 @@ Environment prototype that can be used for the group exercice
 └── README.md
 
 
-*--app/dependencies--*
+**--app/dependencies--**
 
 Container service for Twig-Views with dependency injection
 
-*--app/routes--*
+**--app/routes--**
 PSR 7 request object + routing
 
-*--app/settings--*
+**--app/settings--**
 
 Object setting to indicate to the application where to find our twig templates
 
-*--bootstrap/app--*
+**--bootstrap/app--**
 
 Slim Application setting and bootstrapping
 
-*--public/index--*
+**--public/index--**
 
 Landing page, launch bootsrap and the application
 
-*--templates/partial--*
+**--templates/partial--**
 
 Common parts of the twig templates
 
-*--templates--*
+**--templates--**
 
 Templates for each page + general layout
 
