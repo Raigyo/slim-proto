@@ -22,12 +22,12 @@ class ComposerStaticInita2241890e4362ded6cd844b3a33d5679
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Polyfill\\Ctype\\' => 23,
             'Slim\\Views\\' => 11,
-            'Slim\\PDO\\' => 9,
             'Slim\\' => 5,
         ),
         'P' => 
         array (
             'Psr\\Http\\Message\\' => 17,
+            'Psr\\Container\\' => 14,
         ),
         'I' => 
         array (
@@ -56,10 +56,6 @@ class ComposerStaticInita2241890e4362ded6cd844b3a33d5679
         array (
             0 => __DIR__ . '/..' . '/slim/twig-view/src',
         ),
-        'Slim\\PDO\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/slim/pdo/src/PDO',
-        ),
         'Slim\\' => 
         array (
             0 => __DIR__ . '/..' . '/slim/slim/Slim',
@@ -67,6 +63,10 @@ class ComposerStaticInita2241890e4362ded6cd844b3a33d5679
         'Psr\\Http\\Message\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/http-message/src',
+        ),
+        'Psr\\Container\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/container/src',
         ),
         'Interop\\Container\\' => 
         array (
