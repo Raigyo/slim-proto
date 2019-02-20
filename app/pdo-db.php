@@ -10,7 +10,7 @@ extension=pdo_pgsql
 Use https://github.com/becodeorg/LIE-Jepsen-1.9/tree/master/02-the-hill/docker-compose-postgres
 docker-compose up
 */
-
+/*
 try
    {
        $pdo = new PDO('pgsql:host=localhost:9000;port=5432;dbname=becode', 'becode', 'becode');
@@ -20,3 +20,4 @@ try
        echo $e->getMessage();
 
    }
+*/
