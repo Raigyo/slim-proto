@@ -12,7 +12,7 @@ Environment prototype that can be used for the group exercice
 * PSR7 request objects
 * Use of Twig and container dependencies injection (DI))
 
-## Architecture
+### Architecture
 
 ├── app
 
@@ -68,7 +68,7 @@ Require: PHP 7.3
 
 [Composer](https://getcomposer.org/) is not required if you don't plan to add dependencies or dump autoload with new namespaces
 
-## Running the tests
+### Running the application
 
 Clone, go in the root (of this application) and launch the php server with:
 
@@ -76,7 +76,7 @@ php -S localhost:8000 -t public/
 
 Then run the application in your browser: http://localhost:8000/
 
-## Sources
+### Sources and documentation
 
 [Slim documentation](http://www.slimframework.com/docs/)
 
