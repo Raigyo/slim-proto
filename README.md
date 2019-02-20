@@ -78,10 +78,10 @@ Then run the application in your browser: http://localhost:8000/
 
 ## Sources
 
+[Slim documentation](http://www.slimframework.com/docs/)
+
 [zooboole's Github](https://github.com/zooboole)
 
 [zooboole's tutorial](https://phpocean.com/tutorials/back-end/workouts-with-slim-3-create-a-simple-website/48)
-
-[Slim documentation](http://www.slimframework.com/docs/v3/concepts/di.html)
 
 [Dev.to](https://dev.to/charliedevelops/getting-started-with-slim-php-framework-by-building-a-very-simple-mvcoop-app-4j2b)
