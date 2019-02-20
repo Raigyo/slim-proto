@@ -7,7 +7,7 @@ return [
         'settings' => [
             'displayErrorDetails' => true,
             'view' => [
-                'path' => __DIR__ . '/templates',
+                'path' => __DIR__ . '/../templates',
                 'twig' => [
                 'cache' => false
                 ]
