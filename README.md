@@ -1,19 +1,51 @@
 
-# Slim 3 Framework
+# Becode  JEPSEN LG - PHP with Slim 3 Framework
+
+![Becode logo](img/becode-logo.png)
+
+Environment prototype that can be used for the group exercice
 
 ## This prototype covers
 
-* use of Slim Framework
-* use of Composer
+* Use of Slim Framework (routing, MVC...)
+* Use of Composer / vendors / namespaces
 * PSR7 request objects
-* routing
-* use of Twig and container dependencies injection / Container DI
+* Use of Twig and container dependencies injection (DI))
 
-## How to test
+## Architecture
+
+├── app
+│   ├── dependencies.php
+│   ├── routes.php
+│   └── settings.php   
+├── bootstrap
+│   └── app.php
+├── cache
+├── css
+│   └── style.css
+├── img
+├── public
+│   └── index.php
+├── templates
+│   ├── partials
+│   │   ├── footer.twig
+│   │   └── nav.php
+│   ├── about.twig
+│   ├── contact.twig
+│   ├── home.twig
+│   └── layout.twig
+├── vendor
+├── composer.json
+├── composer.lock
+└── README.md
+
+### Prerequisites
 
 Require: PHP 7.3
 
-Composer is not required if you don't plan to add dependencies
+[Composer](https://getcomposer.org/) is not required if you don't plan to add dependencies or dump autoload with new namespaces
+
+## Running the tests
 
 Clone, go in the root (of this application) and launch the php server with:
 
@@ -29,4 +61,4 @@ Then run the application in your browser: http://localhost:8000/
 
 [Slim documentation](http://www.slimframework.com/docs/v3/concepts/di.html)
 
-[PHP build-in server documentation](http://php.net/manual/fr/features.commandline.webserver.php)
+[Dev.to](https://dev.to/charliedevelops/getting-started-with-slim-php-framework-by-building-a-very-simple-mvcoop-app-4j2b)
