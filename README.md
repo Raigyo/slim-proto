@@ -94,7 +94,7 @@ Common parts of the twig templates
 
 Templates for each page + general layout
 
-### Prerequisites
+### Prerequisites 
 
 Require: PHP 7.3
 
