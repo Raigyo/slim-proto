@@ -21,3 +21,9 @@ $app->get('/about',function(ServerRequestInterface $request,ResponseInterface $r
 $app->get('/contact',function(ServerRequestInterface $request,ResponseInterface $response,$args) {
   return $this->view->render($response, 'contact.twig');
 })->setName('contact');
+// Post Requests
+
+$app->post("/login", function() use($app){
+    $paramValue1 = $app->request->post('contentForm');
+    echo '<b>'.$paramValue1.'<br>';
+});

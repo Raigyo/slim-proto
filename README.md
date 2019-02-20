@@ -7,7 +7,7 @@ Environment prototype that can be used for the group exercice
 
 ## This prototype covers
 
-* Use of Slim Framework (routing, MVC...)
+* Use of Slim Framework (routing / CRUD, MVC...)
 * Use of Composer / vendors / namespaces
 * PSR7 request objects
 * Use of Twig and container dependencies injection (DI))
