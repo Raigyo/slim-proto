@@ -55,6 +55,9 @@ Environment prototype that can be used for the group exercice
 │   └── layout.twig
 
 ├── vendor
+│   ├── Several folders used by composer
+
+│   └── autoload.php
 
 ├── composer.json
 
@@ -62,17 +65,47 @@ Environment prototype that can be used for the group exercice
 
 └── README.md
 
+
+*--app/dependencies--*
+
+Container service for Twig-Views with dependency injection
+
+*--app/routes--*
+PSR 7 request object + routing
+
+*--app/settings--*
+
+Object setting to indicate to the application where to find our twig templates
+
+*--bootstrap/app--*
+
+Slim Application setting and bootstrapping
+
+*--public/index--*
+
+Landing page, launch bootsrap and the application
+
+*--templates/partial--*
+
+Common parts of the twig templates
+
+*--templates--*
+
+Templates for each page + general layout
+
 ### Prerequisites
 
 Require: PHP 7.3
 
 [Composer](https://getcomposer.org/) is not required if you don't plan to add dependencies or dump autoload with new namespaces
 
+If you add namespaces in vendor/autoload.php use: *composer dump-autoload*
+
 ### Running the application
 
 Clone, go in the root (of this application) and launch the php server with:
 
-php -S localhost:8000 -t public/
+*php -S localhost:8000 -t public/*
 
 Then run the application in your browser: http://localhost:8000/
 

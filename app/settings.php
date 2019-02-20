@@ -1,6 +1,6 @@
 <?php
 
-//This code return an Array() of setting to indicate to the application where to find our twig templates.
+//This code return an object of settings to indicate to the application where to find our twig templates.
 
 return [
 
