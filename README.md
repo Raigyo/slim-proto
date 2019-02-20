@@ -55,6 +55,7 @@ Environment prototype that can be used for the group exercice
 │   └── layout.twig
 
 ├── vendor
+
 │   ├── Several folders used by composer
 
 │   └── autoload.php
