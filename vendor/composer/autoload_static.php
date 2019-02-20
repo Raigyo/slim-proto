@@ -22,6 +22,7 @@ class ComposerStaticInita2241890e4362ded6cd844b3a33d5679
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Polyfill\\Ctype\\' => 23,
             'Slim\\Views\\' => 11,
+            'Slim\\PDO\\' => 9,
             'Slim\\' => 5,
         ),
         'P' => 
@@ -54,6 +55,10 @@ class ComposerStaticInita2241890e4362ded6cd844b3a33d5679
         'Slim\\Views\\' => 
         array (
             0 => __DIR__ . '/..' . '/slim/twig-view/src',
+        ),
+        'Slim\\PDO\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/slim/pdo/src/PDO',
         ),
         'Slim\\' => 
         array (
