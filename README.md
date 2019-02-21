@@ -75,7 +75,10 @@ Container service for Twig-Views with dependency injection
 
 **--app/pdo-db--**
 
+DB connection using PDO
+
 **--app/routes--**
+
 PSR 7 request object + routing
 
 **--app/settings--**
