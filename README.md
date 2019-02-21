@@ -30,8 +30,6 @@ Environment prototype that can be used for the group exercice
 
 ├── cache
 
-
-
 ├── img
 
 ├── public
