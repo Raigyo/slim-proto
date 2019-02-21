@@ -18,8 +18,6 @@ Environment prototype that can be used for the group exercice
 
 │   ├── dependencies.php
 
-│   ├── pdo-db.php
-
 │   ├── routes.php
 
 │   └── settings.php   
@@ -71,11 +69,7 @@ Environment prototype that can be used for the group exercice
 
 **--app/dependencies--**
 
-Container service for Twig-Views with dependency injection
-
-**--app/pdo-db--**
-
-DB connection using PDO
+Container service for Twig-Views & DB connection
 
 **--app/routes--**
 
@@ -83,7 +77,7 @@ PSR 7 request object + routing
 
 **--app/settings--**
 
-Object setting to indicate to the application where to find our twig templates
+Object setting to indicate to the application where to find our twig templates + object to define DB Settings
 
 **--bootstrap/app--**
 
