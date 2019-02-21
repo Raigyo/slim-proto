@@ -24,5 +24,5 @@ require __DIR__ . '/../app/dependencies.php';
 // Require our route
 require __DIR__ . '/../app/routes.php';
 
-// Require our route
+// Require our DB connection
 require __DIR__ . '/../app/pdo-db.php';
