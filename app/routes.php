@@ -18,9 +18,8 @@ $app->get('/about',function(ServerRequestInterface $request,ResponseInterface $r
   $sth = $this->db->prepare("SELECT id, name, profile FROM about");
   $sth->execute();
   $about = $sth->fetchAll();
-  echo $about;
   return $this->response->withJson($about);
-  return $this->view->render($response, 'about.twig');
+  return $this->view->render($response, 'about.twig', ['curl_result' => json_decode($about)] );
 })->setName('about');
 // route for contact
 $app->get('/contact',function(ServerRequestInterface $request,ResponseInterface $response,$args) {
