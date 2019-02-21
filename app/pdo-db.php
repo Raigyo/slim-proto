@@ -8,17 +8,17 @@ http://php.net/manual/fr/pdostatement.fetch.php
 
 try
    {
-       $dbh = new PDO('pgsql:host=localhost;port=5432;dbname=becode', 'becode', 'becode');
+       $pdo = new PDO('pgsql:host=localhost;port=5432;dbname=becode', 'becode', 'becode');
    }
  catch (PDOException $e)
  {
      echo $e->getMessage();
  }
 
- function readData($dbh) {
+ function readData($pdo) {
    $sql = 'SELECT `id`, `name`, profile FROM `about`';
    try {
-     $stmt = $dbh->prepare($sql);
+     $stmt = $pdo->prepare($sql);
      $stmt->execute();
      //by column number
      $stmt->bindColumn(1, $id);
@@ -35,4 +35,4 @@ try
      print $e->getMessage();
    }
  }
-readData($dbh);
+//readData($pdo);
