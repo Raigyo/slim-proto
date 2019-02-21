@@ -116,6 +116,8 @@ Use this docker file: [docker-compose-postgres](https://github.com/becodeorg/LIE
 
 Launch it using the following link: [http://localhost:9000](http://localhost:9000)
 
+Import this database in it [https://github.com/Raigyo/slim-proto/tree/wip/_pgsql-db](https://github.com/Raigyo/slim-proto/tree/wip/_pgsql-db)
+
 ### Running the application
 
 Clone, go in the root (of this application) and launch the php server with:
