@@ -16,15 +16,14 @@ try
  }
 
  function readData($dbh) {
-   echo "olé";
-   /*$sql = 'SELECT id, name, profile FROM about';
+   $sql = 'SELECT `id`, `name`, profile FROM `about`';
    try {
      $stmt = $dbh->prepare($sql);
      $stmt->execute();
-     //Lie par les numéros de colonnes
+     //by column number
      $stmt->bindColumn(1, $id);
      $stmt->bindColumn(2, $name);
-     //Lie par les noms de colonnes
+     //Lby column name
      $stmt->bindColumn('profile', $profile);
 
      while ($row = $stmt->fetch(PDO::FETCH_BOUND)) {
@@ -34,6 +33,6 @@ try
    }
    catch (PDOException $e) {
      print $e->getMessage();
-   }*/
+   }
  }
-//readData($dbh);
+readData($dbh);
