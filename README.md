@@ -100,13 +100,13 @@ Templates for each page + general layout
 
 ### Prerequisites
 
-Require: PHP 7.3
+**Require: PHP 7.3**
 
 [Composer](https://getcomposer.org/) is not required if you don't plan to add dependencies or dump autoload with new namespaces
 
 If you add namespaces in vendor/autoload.php use: *composer dump-autoload*
 
-You will need a PostgreSQL running to access the DB using PDO.
+**You will need a PostgreSQL running to access the DB using PDO**
 
 Use this docker file: [docker-compose-postgres](https://github.com/becodeorg/LIE-Jepsen-1.9/tree/master/02-the-hill/docker-compose-postgres)
 
@@ -121,8 +121,6 @@ Import this database in it [https://github.com/Raigyo/slim-proto/tree/wip/_pgsql
 Clone, go in the root (of this application) and launch the php server with:
 
 *php -S localhost:8000 -t public/*
-
-
 
 Then run the application in your browser: http://localhost:8000/
 
