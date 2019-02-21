@@ -18,6 +18,8 @@ Environment prototype that can be used for the group exercice
 
 │   ├── dependencies.php
 
+│   ├── pdo-db.php
+
 │   ├── routes.php
 
 │   └── settings.php   
@@ -28,13 +30,15 @@ Environment prototype that can be used for the group exercice
 
 ├── cache
 
-├── css
 
-│   └── style.css
 
 ├── img
 
 ├── public
+
+│   ├── css
+
+│   │   └── style.css
 
 │   └── index.php
 
@@ -94,7 +98,7 @@ Common parts of the twig templates
 
 Templates for each page + general layout
 
-### Prerequisites 
+### Prerequisites
 
 Require: PHP 7.3
 
