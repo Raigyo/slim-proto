@@ -13,9 +13,13 @@ use \Psr\Http\Message\ResponseInterface;
 $app->get('/',function(ServerRequestInterface $request,ResponseInterface $response,$args) {
   return $this->view->render($response, 'home.twig');
 })->setName('home');
-// route for about
+// route for about +DB content
 $app->get('/about',function(ServerRequestInterface $request,ResponseInterface $response,$args) {
-  return $this->view->render($response, 'about.twig');
+  $sth = $this->db->prepare("SELECT id, name, profile FROM about");
+  $sth->execute();
+  $about = $sth->fetchAll();
+  //return $this->response->withJson($about);
+  return $this->view->render($response, 'about.twig', ['curl_result' => json_encode($about)] );
 })->setName('about');
 // route for contact
 $app->get('/contact',function(ServerRequestInterface $request,ResponseInterface $response,$args) {
@@ -28,3 +32,11 @@ $app->post('/confirm',function(ServerRequestInterface $request,ResponseInterface
   //because we can only send an array as argument in a render
   return $this->view->render($response, 'confirm.twig', $data);
 })->setName('confirm');
+
+// get content of DB
+/*$app->get('/contendDb', function (ServerRequestInterface $request,ResponseInterface $response,$arg) {
+    $sth = $this->db->prepare("SELECT `id`, `name`, profile FROM `about`");
+    $sth->execute();
+    $about = $sth->fetchAll();
+    return $this->response->withJson($about);
+});*/

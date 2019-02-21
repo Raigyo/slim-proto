@@ -7,10 +7,10 @@ Environment prototype that can be used for the group exercice
 
 ## This prototype covers
 
-* Use of Slim Framework (routing / CRUD, MVC...)
-* Use of Composer / vendors / namespaces
-* PSR7 request objects
+* Use of Slim Framework (routing / CRUD, MVC, PSR7 request objects, Forms...)
+* Use of Composer, vendors, namespaces
 * Use of Twig and container dependencies injection (DI))
+* PHP Data Objects (PDO) connecting to PostgreSQL
 
 ### Architecture
 
@@ -28,13 +28,13 @@ Environment prototype that can be used for the group exercice
 
 ├── cache
 
-├── css
-
-│   └── style.css
-
 ├── img
 
 ├── public
+
+│   ├── css
+
+│   │   └── style.css
 
 │   └── index.php
 
@@ -69,7 +69,7 @@ Environment prototype that can be used for the group exercice
 
 **--app/dependencies--**
 
-Container service for Twig-Views with dependency injection
+Container service for Twig-Views & DB connection
 
 **--app/routes--**
 
@@ -77,7 +77,7 @@ PSR 7 request object + routing
 
 **--app/settings--**
 
-Object setting to indicate to the application where to find our twig templates
+Object setting to indicate to the application where to find our twig templates + object to define DB Settings
 
 **--bootstrap/app--**
 
@@ -95,13 +95,23 @@ Common parts of the twig templates
 
 Templates for each page + general layout
 
-### Prerequisites 
+### Prerequisites
 
-Require: PHP 7.3
+**Require: PHP 7.3**
 
 [Composer](https://getcomposer.org/) is not required if you don't plan to add dependencies or dump autoload with new namespaces
 
 If you add namespaces in vendor/autoload.php use: *composer dump-autoload*
+
+**You will need a PostgreSQL running to access the DB using PDO**
+
+Use this docker file: [docker-compose-postgres](https://github.com/becodeorg/LIE-Jepsen-1.9/tree/master/02-the-hill/docker-compose-postgres)
+
+*docker-compose up*
+
+Launch it using the following link: [http://localhost:9000](http://localhost:9000)
+
+Import this database in it [https://github.com/Raigyo/slim-proto/tree/wip/_pgsql-db](https://github.com/Raigyo/slim-proto/tree/wip/_pgsql-db)
 
 ### Running the application
 
