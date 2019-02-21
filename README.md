@@ -7,10 +7,10 @@ Environment prototype that can be used for the group exercice
 
 ## This prototype covers
 
-* Use of Slim Framework (routing / CRUD, MVC...)
-* Use of Composer / vendors / namespaces
-* PSR7 request objects
+* Use of Slim Framework (routing / CRUD, MVC, PSR7 request objects, Forms...)
+* Use of Composer, vendors, namespaces
 * Use of Twig and container dependencies injection (DI))
+* PHP Data Objects (PDO) connecting to PostgreSQL
 
 ### Architecture
 
@@ -75,6 +75,8 @@ Environment prototype that can be used for the group exercice
 
 Container service for Twig-Views with dependency injection
 
+**--app/pdo-db--**
+
 **--app/routes--**
 PSR 7 request object + routing
 
@@ -106,11 +108,21 @@ Require: PHP 7.3
 
 If you add namespaces in vendor/autoload.php use: *composer dump-autoload*
 
+You will need a PostgreSQL running to access the DB using PDO.
+
+Use this docker file: [docker-compose-postgres](https://github.com/becodeorg/LIE-Jepsen-1.9/tree/master/02-the-hill/docker-compose-postgres)
+
+*docker-compose up*
+
+Launch it using the following link: [http://localhost:9000](http://localhost:9000)
+
 ### Running the application
 
 Clone, go in the root (of this application) and launch the php server with:
 
 *php -S localhost:8000 -t public/*
+
+
 
 Then run the application in your browser: http://localhost:8000/
 
