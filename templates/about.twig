@@ -8,8 +8,13 @@
       <h2>About us!</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       {% if curl_result is defined %}
-          <pre>{{ curl_result|json_encode(constant('JSON_PRETTY_PRINT')) }}</pre>
+          <p>{{ curl_result|json_encode(constant('JSON_PRETTY_PRINT')) }}</p>
       {% endif %}
+      <ul>
+    {% for user in curl_result %}
+        <li>{{ user.name }}</li>
+    {% endfor %}
+</ul>
   </div>
 </div>
 

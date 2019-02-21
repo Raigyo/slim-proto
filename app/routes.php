@@ -19,7 +19,7 @@ $app->get('/about',function(ServerRequestInterface $request,ResponseInterface $r
   $sth->execute();
   $about = $sth->fetchAll();
   //return $this->response->withJson($about);
-  return $this->view->render($response, 'about.twig', ['curl_result' => json_encode($about)] );
+  return $this->view->render($response, 'about.twig', ['curl_result' => $about] );
 })->setName('about');
 // route for contact
 $app->get('/contact',function(ServerRequestInterface $request,ResponseInterface $response,$args) {
